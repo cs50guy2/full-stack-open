@@ -6,6 +6,7 @@ const Header = (props) => {
   );
 };
 const Part = (props) => {
+  console.log(props);
   return (
     <div>
       <p>
@@ -16,6 +17,7 @@ const Part = (props) => {
 };
 
 const ContentOld = (props) => {
+  console.log(props);
   return (
     <div>
       <Part part={props.part1} exercises={props.exercises1} />
