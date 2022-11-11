@@ -26,24 +26,13 @@ const Content = (props) => {
     </div>
   );
 };
-// const Content = (props) => {
-//   return (
-//     <div>
-//       {props.contents.map((content) => (
-//         <p key={content.part}>
-//           {content.part} {content.exercises}
-//         </p>
-//       ))}
-//     </div>
-//   );
-// };
 
 const Total = (props) => {
   // console.log(props);
   return (
     <div>
       <p>
-        Number of exercises{" "}
+        Number of exercises{' '}
         {props.parts[0].exercises +
           props.parts[1].exercises +
           props.parts[2].exercises}
@@ -54,18 +43,18 @@ const Total = (props) => {
 
 const App = () => {
   const course = {
-    name: "Half Stack application development",
+    name: 'Half Stack application development',
     parts: [
       {
-        name: "Fundamentals of React",
+        name: 'Fundamentals of React',
         exercises: 10,
       },
       {
-        name: "Using props to pass data",
+        name: 'Using props to pass data',
         exercises: 7,
       },
       {
-        name: "State of a component",
+        name: 'State of a component',
         exercises: 14,
       },
     ],
