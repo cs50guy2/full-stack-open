@@ -1,6 +1,6 @@
 import Name from './Name';
 
-export default function Persons({ persons, filter }) {
+export default function Persons({ persons, filter, deleteHandler }) {
   return persons
     .filter(
       (person) =>
@@ -10,7 +10,13 @@ export default function Persons({ persons, filter }) {
     )
     .map((person) => {
       return (
-        <Name key={person.name} name={person.name} number={person.number} />
+        <Name
+          key={person.name}
+          name={person.name}
+          number={person.number}
+          id={person.id}
+          deleteHandler={deleteHandler}
+        />
       );
     });
 }

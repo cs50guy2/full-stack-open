@@ -1,7 +1,7 @@
-export default function Name({ name, number }) {
+export default function Name({ name, number, id, deleteHandler }) {
   return (
     <div>
-      {name} {number}
+      {name} {number} <button onClick={() => deleteHandler(id)}>delete</button>
     </div>
   );
 }
